@@ -251,18 +251,20 @@ body{
     justify-content: space-evenly;
     gap: 20px;
    padding: 1rem;
-    background-image: url("/portfolio/images/child2.jpg");
+    background-image: url("./images/child2.jpg");
     background-size: cover;
     background-repeat: no-repeat; 
     align-items: center;
 }
 .contact_box:nth-child(1){
     background-color: aliceblue;
-    background-image: url("/portfolio/images/child2.jpg");
+    background-image: url("./images/child2.jpg");
     background-size: cover;
+        background-repeat: no-repeat; 
+
 }
 .contact_box:nth-child(2){
-    background-image: url("/portfolio/images/child1.jpg");
+    background-image: url("./images/child1.jpg");
     background-size: cover;
     background-repeat: no-repeat; 
 
