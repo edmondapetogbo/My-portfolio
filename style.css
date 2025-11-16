@@ -1,0 +1,318 @@
+body{
+    min-height: 100vh;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: aliceblue;
+    flex-flow: row wrap;
+    margin-bottom: 20px;
+
+}
+.nom{
+    color: darkblue;
+}
+.header img{
+    width: 10vw;
+    border-radius: 50%; 
+
+}
+
+.links ul{
+    display: flex;
+    justify-content: space-between;
+    gap:10px; 
+    list-style: none;
+    font-size: 25px;  
+}
+.links ul span{
+   color: aliceblue; 
+   font-weight: bolder;
+}
+
+.links a{
+    text-decoration: none; 
+    color: darkblue;
+    font-weight: bold;
+}
+
+/* styling the skills*/
+.container{
+    display: flex;
+    gap:20px;    
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px; 
+    height: max-content;
+    
+     
+}
+
+.boxes{
+    display: flex;
+    flex:2 1 300px; 
+    flex-wrap: wrap; 
+    background-color: antiquewhite;
+    padding: 1.5rem;
+    gap: 20px;
+    border-radius: 30px;
+   
+}
+.boxes:nth-child(1){
+    animation:cubic-bezier(0.215, 0.610, 0.355, 1)
+}
+.box{
+    background-color: aliceblue;
+    flex:2 1 300px;  
+    border-radius: 30px; 
+    text-align: justify;
+    padding: 10px;
+    width: 76%;
+}
+
+.box h1{
+    color: darkblue;
+}
+
+.box div:hover{
+    transform: scale(1.2, 1.2);
+    background-color: rgba(0, 0, 255, 0.105);
+   
+}
+.image{
+    flex: 1 1 200px;
+    justify-content: center;
+    padding: 1.5em;   
+}
+
+.image img {
+ 
+    max-width: 100%;
+    border-radius: 1rem; 
+   
+}
+.skills{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;   
+}
+
+
+.projects{
+   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;  
+}
+
+.line{
+    display: block;
+    height: 3px;
+    width: 3%;
+    background-color: darkblue;
+    margin: 6px auto 0;
+    border-radius: 3px;
+}
+
+.foot{
+    padding: 1em;
+    position: static;
+    
+    width: 100%;
+    height: 20%;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    gap:30px
+
+}
+.foot img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+/*styling the projects*/
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap:1.5rem;
+    background-color: antiquewhite;
+    padding: 2rem 2rem;
+    flex-flow: row wrap;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+}
+.skill-btn{
+    background-color: aliceblue;
+    height: 40px;
+    width: 200px;
+    border-radius: 10px;
+    border: white;
+    color: darkblue;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgb(0, 0, 0, 208);
+
+}
+#top{
+    color: rgb(10, 115, 208);
+    cursor: pointer;
+    height: 50px;
+    float: right;
+    position: absolute;
+}
+
+@media screen and (max-width: 768px){
+    .container{
+        flex-direction: column;
+        text-align: center;
+    }
+    .boxes:nth-child(2){
+        order: 1;
+    }
+    .header .nom{
+        font-size: small;
+    }
+    .links li{
+        font-size: large;
+    }
+    .header .logo{
+        width: 40vw; ;
+    }
+    .contact_box:nth-of-type(2){
+        order: 1;
+    }
+    .contact_container{
+        padding:1rem
+    }
+    .foot{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/*modal styling*/
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0, 208);
+    
+}
+.projet_desc{
+    background-color: rgb(161, 200, 234);
+    height: 10% ;
+}
+
+.modal-content{
+    background-color: aliceblue;
+    margin: 10%;
+    padding: 20px;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 50vw;
+    float:none;
+}
+.close{
+    float: right;
+    font-size: 20px;
+    cursor: pointer;
+    color: red;
+    border-radius: 50%;
+}
+
+/*styling of the contact form*/
+.contact_container{
+    display: flex;
+    background-color: color-mix(in srgb,  aliceblue 50%, antiquewhite 50%);
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+   padding: 1rem;
+    background-image: url("/portfolio/images/child2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+    align-items: center;
+}
+.contact_box:nth-child(1){
+    background-color: aliceblue;
+    background-image: url("/portfolio/images/child2.jpg");
+    background-size: cover;
+}
+.contact_box:nth-child(2){
+    background-image: url("/portfolio/images/child1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat; 
+
+
+}
+.contact_box{
+    padding: 1.5rem;
+    
+    border-radius: 20px;
+    flex: 2 1 320px;
+    
+    
+}
+.contact_box p{
+text-align: justify;
+}
+.item1{
+    display: flex;
+    
+    justify-content: space-between;
+    gap: 20px;   
+}
+
+
+.element input{
+    border: 0;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
+.element textarea{
+    width: 100%;
+    height: 80px;
+    border-radius: 5px;
+    border: 0;
+}
+.contact_box .element{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.formBtn{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    font-size: larger;
+    background-color: aliceblue;
+    color: darkblue;
+    border: 0;
+    cursor: pointer;
+}
+

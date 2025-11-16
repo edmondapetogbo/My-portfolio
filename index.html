@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header" id="header">
+        <img src="images/logo.png" alt="Edmond image" class="logo">
+        <div class="nom">
+            <h1>K. Edmond Apetogbo</h1>
+        </div>
+
+        <div class="links">
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <span>|</span>
+                <li><a href="#projects">Projects</a></li>
+                <span>|</span>
+                <li><a href="#foot">Get in touch</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <h1 id="skills" class="skills">Skills</h1>
+    <span class="line"></span>
+
+    <div class="container">
+        <div class="boxes">
+            <div class="box">
+                <h1>C++</h1>
+                <p>
+                    I learned structured programming in C, focusing on memory management and data structures. I
+                    implemented
+                    linked lists, stacks, queues, binary search trees, and sorting algorithms using pointers. I also
+                    developed strong debugging and problem-solving skills through iterative code tracing and logic
+                    analysis.
+                </p>
+            </div>
+
+            <div class="box">
+                <h1>Python</h1>
+                <p>
+                    Completed NPTEL The Joy of Computing Using Python (IIT Ropar).
+                    Learned core programming concepts including algorithms, recursion, conditional logic, loops, lists,
+                    dictionaries, file handling, and turtle based graphical programming.
+                    Implemented multiple mini-projects demonstrating creativity and logic.
+                </p>
+            </div>
+            <div class="box">
+                <h1>Java Script</h1>
+                I have practical experience in JavaScript programming, including DOM manipulation, event handling, and
+                building interactive web applications. I developed small projects such as a Rock, Paper, Scissors game,
+                a
+                stopwatch with reset functionality, and a mini calculator. Through these projects, I learned to
+                structure logic using functions and conditional statements, update HTML dynamically, and respond to user
+                events to create interactive user experiences.
+
+            </div>
+
+            <div class="box">
+                <h1>Prompt Engineer</h1>
+                <p>
+                    Completed Prompt Engineering Certification from AICERTs, gaining expertise in designing effective
+                    prompts and interacting intelligently with AI models like ChatGPT. Learned advanced prompting
+                    strategies, including role-based prompting, structured output, and optimization of AI responses for
+                    t echnical and creative tasks.
+                </p>
+            </div>
+            <div class="box">
+                <h1>Git & GitHub</h1>
+                <p>
+                    Experienced with Git version control for managing and tracking project changes. Proficient in creating
+                    repositories, branching, merging, and collaborating via GitHub. Comfortable using commit histories to
+                    maintain clean codebases and coordinate development with teams.
+             </p>
+
+            </div>
+            
+            
+
+
+        </div>
+        <div class="image">
+            <img src="images/ed.jpg" alt="Edmond image">
+        </div>
+    </div>
+    </div>
+    <div id="projects" class="projects">
+        <h1>Projects</h1>
+        <span class="line"></span>
+
+        <div class="buttons">
+            <div><button data-id="portfolio" class="skill-btn" id="portfolio">Portfolio</button></div>
+            <div><button data-id="ToDo" class="skill-btn" id="todo">ToDo List </button></div>
+            <div><button data-id="sorting_visualiser" class="skill-btn" id="sorting_visualiser">Sorting visualiser
+                </button></div>
+            <div><button data-id="password_generator" class="skill-btn" id="password_generator">Password
+                    Generator</button></div>
+            <div><button data-id="bank_management" class="skill-btn" id="bank_management">Bank Management</button></div>
+            <div><button data-id="encryption" class="skill-btn" id="encryption">Encryption</button></div>
+
+
+        </div>
+    </div>
+    <!--contact form-->
+    <div id="projects" class="projects">
+        <h1>Contact</h1>
+        <span class="line"></span>
+        <div class="contact_container">
+
+            <div class="contact_box">
+                <h1>Get in touch</h1>
+                <p>I’m always open to new ideas, collaborations, or opportunities to build meaningful digital solutions.
+                    Whether you have a project in mind, need help bringing an idea to life, or just want to connect,
+                    feel free to reach out. Let’s turn creativity into code and make something amazing together.
+                </p>
+            </div>
+            <div class="contact_box">
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact_form">
+                    <input type="hidden" name="access_key" value="4cda8d2e-fef8-405d-a880-9a1616740558">
+                    <div class="element">Name <input type="text" name="name" placeholder="Edmond Komlan Apetogbo"></div>
+                    <div class="item1">
+                        <div class="element">E_mail <input type="text" name="e_mail" placeholder="name@gmail.com"></div>
+                        <div class="element">Phone <input type="text" placeholder="1234567890"></div>
+                    </div>
+                    <div class="element">Message <textarea type="text" name="message" placeholder="Message"></textarea>
+                    </div>
+                    <div class="h-captcha" data-captcha="true"></div>
+
+                    <button type="submit" class="formBtn">Send</button>
+
+                </form>
+            </div>
+        </div>
+
+        <!--Modal for projects-->
+
+        <div id="skillModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2 id="project-title"></h2>
+                <p id="project_description"></p>
+
+            </div>
+        </div>
+        <!--portfolio-->
+        <div id="portfolio_desc" class="projet_desc" hidden>
+            <h3>Problem:</h3>
+
+            I needed a personal website to showcase my work, identity, and skills in a clean and responsive way.
+
+            <h3>Solution:</h3>
+
+            I designed and built a fully responsive portfolio website using pure HTML, CSS, and JavaScript,
+            implementing modal pop-ups, flexbox layouts, animations, and mobile-first responsiveness.
+            <h3>Skills Learned:</h3>
+            Semantic HTML
+            CSS Flexbox & Grid
+            Responsive design (media queries)
+            Modal windows & DOM manipulation
+            UI/UX design basics
+            Hosting & deployment
+            Testing on different devices
+        </div>
+        <!--To do list-->
+        <div id="ToDo_desc" class="projet_desc" hidden>
+            <h3>Problem:</h3>
+
+            People often struggle to track tasks, mark progress, and stay organized.
+
+            <h3>Solution:</h3>
+
+            I built a CLI-based To-Do List system in Python, handling adding tasks, checking completed tasks, deleting
+            tasks, and preventing duplicate inputs — with clear and simple user interaction.
+
+            <h3>Skills Learned:</h3>
+
+            Python fundamentals (loops, lists, dicts)
+            File handling
+            User input validation
+            Structuring a clean CLI app
+            UX thinking for command-line programs
+        </div>
+
+        <!--Sorting visualiser-->
+        <div id="sorting_visualiser_desc" class="projet_desc" hidden>
+            <h3>Problem:</h3>
+
+            Sorting algorithms are hard to understand without a visual representation.
+
+            <h3>Solution:</h3>
+
+            I created a visual tool that animates sorting algorithms (Bubble Sort, Selection Sort, etc.) so users can
+            see
+            how elements move step-by-step.
+
+            <h3>Skills Learned:</h3>
+
+            Algorithm logic (sorting algorithms)
+            Time complexity understanding
+            Animation logic
+            DOM or Tkinter UI updates (depending on language)
+            Data visualization basics
+        </div>
+
+        <!--Password generator-->
+        <div id="password_generator_desc" class="projet_desc" hidden>
+            <h3>Problem:</h3>
+
+            Strong, random passwords are necessary for security but hard to create manually.
+
+            <h3>Solution:</h3>
+
+            I built a password generator that creates secure random passwords using uppercase, lowercase, digits, and
+            symbols, with adjustable length.
+
+            <h3>Skills Learned:</h3>
+
+            Randomization libraries
+            String manipulation
+            Security best practices
+            User interface creation (CLI or GUI)
+        </div>
+        <!--Encryption-->
+        <div id="encryption_desc" class="projet_desc" hidden>
+            <h3>Problem:</h3>
+
+            Sensitive data must be protected before storage or transmission.
+
+            <h3>Solution:</h3>
+
+            I implemented an encryption tool (Caesar Cipher or custom logic) to encode and decode messages using
+            algorithmic
+            transformations.
+
+            <h3>Skills Learned:</h3>
+
+            Cryptographic thinking
+            String transformation logic
+            Python functions / loops
+            Secure handling of data inputs
+        </div>
+        <!--Bank managment-->
+        <div id="bank_management_desc" class="projet_desc" hidden>
+            <h3>Problem:</h3>
+
+            Banks require a structured system to manage customers, accounts, deposits, withdrawals, and balances.
+
+            <h3>Solution:</h3>
+
+            I developed a simplified bank management system that can create accounts, store user information, update
+            balances, and track transactions.
+
+            <h3>Skills Learned:</h3>
+
+            File/database handling
+            CRUD operations
+            Data validation
+            Modular programming
+            Problem decomposition
+        </div>
+
+        <script src="https://web3forms.com/client/script.js" async defer></script>
+        <script src="/portfolio/script.js"></script>
+</body>
+
+<footer class="foot" id="foot">
+    <div>
+        <a href="https://www.facebook.com/komlanedmond/" target="_blank">
+            <img src="images/facebook.png" alt="">
+        </a>
+    </div>
+
+    <div>
+        <a href="https://www.linkedin.com/in/komlanedmond?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
+            target="_blank">
+            <img src="images/linkedin.avif" alt="">
+        </a>
+    </div>
+
+    <div>
+        <a href="https://github.com/" target="_blank">
+            <img src="images/github.jpg" alt="">
+        </a>
+    </div>
+
+    <div>
+        <a href="mailto:apekomlanedmond">
+            <img src="images/email.webp" alt="">
+        </a>
+    </div>
+    <a href="#header">
+        <input type="button" name="top" id="top" value="^">
+    </a>
+
+
+</footer>
+
+</html>
