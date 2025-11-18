@@ -1,0 +1,3 @@
+ User-agent: *
+Allow: /
+Sitemap:https://edmondapetogbo.github.io/Sitemap.xml
